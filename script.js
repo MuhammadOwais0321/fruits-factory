@@ -57,7 +57,9 @@ frontFormBtn.addEventListener("click", (e) => {
   e.preventDefault();
   mainDiv.classList.add("mainActive");
   mainDiv.classList.remove("hidden");
+  frontForm.classList.remove('flex')
   frontForm.classList.add("hidden");
+  frontDiv.classList.remove('flex')
   frontDiv.classList.add("hidden");
   let email = frontFormEmail.value;
   emailPara.innerHTML = `your Email is : ${email}`;
@@ -134,7 +136,8 @@ if (filteredArray.length === 0) {
 })
  let a = 1
 function cartBtn(){
-    console.log('owis');
+    
+cartCircle.classList.remove('hidden')
     if (!cartCircle.classList.contains('mainActive')) {
         cartCircle.classList.add('mainActive')
     }
