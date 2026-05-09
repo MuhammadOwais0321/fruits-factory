@@ -48,7 +48,7 @@ for (let id = 1; id <= totalObjects; id++) {
     id: id,
     name: fruit.name,
     price: fruit.price,
-    src: `/assets/${fruitNameLower} ${imageNumber}.jpg`,
+    src: `./assets/${fruitNameLower} ${imageNumber}.jpg`,
   };
   generatedArray.push(obj);
 }
