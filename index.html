@@ -437,6 +437,26 @@
         </button>
       </div>
     </div>
+    <!-- ========== EMPTY CART ALERT / MODAL ========== -->
+<div id="emptyCartAlert" class="page-hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/20 backdrop-blur-sm">
+  <!-- Card -->
+  <div class="w-full max-w-sm bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-6 text-center border border-white/60">
+    <!-- Close button (top-right) -->
+    <div class="flex justify-end">
+      <button id="closeEmptyCartAlert" class="w-8 h-8 bg-red-50 hover:bg-red-100 text-red-400 hover:text-red-600 rounded-full flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <!-- Icon -->
+    <div class="text-5xl mb-4">🛒</div>
+    <!-- Message -->
+    <h2 class="text-xl font-extrabold text-[#2d5a3f] mb-2">Oops!</h2>
+    <p class="text-stone-600 font-medium">Your cart is empty.</p>
+    <p class="text-sm text-stone-500 mt-1">Please add some fresh fruits before proceeding to checkout.</p>
+    <!-- Optional: a button to go back (no logic) -->
+    <button id="alertContinueShopping" class="premium-btn mt-6">Continue Shopping</button>
+  </div>
+</div>
 
     <!-- Link to your original JS file -->
     <script src="script.js"></script>
